@@ -1,0 +1,6 @@
+.vscode
+__pycache__
+models/__pycache__
+models/cifar/__pycache__
+data
+checkpoints/cifar10
