@@ -1,0 +1,314 @@
+==> Preparing dataset cifar10
+Files already downloaded and verified
+==> creating model 'resnet'
+Param name           Shape                          Type           
+----------------------------------------------------------------------
+conv1.weight         torch.Size([16, 3, 3, 3])      torch.float32  
+bn1.weight           torch.Size([16])               torch.float32  
+bn1.bias             torch.Size([16])               torch.float32  
+layer1.0.conv1.weight torch.Size([16, 16, 3, 3])     torch.float32  
+layer1.0.bn1.weight  torch.Size([16])               torch.float32  
+layer1.0.bn1.bias    torch.Size([16])               torch.float32  
+layer1.0.conv2.weight torch.Size([16, 16, 3, 3])     torch.float32  
+layer1.0.bn2.weight  torch.Size([16])               torch.float32  
+layer1.0.bn2.bias    torch.Size([16])               torch.float32  
+layer1.0.relu1.alpha torch.Size([])                 torch.float32  
+layer1.0.relu2.alpha torch.Size([])                 torch.float32  
+layer1.1.conv1.weight torch.Size([16, 16, 3, 3])     torch.float32  
+layer1.1.bn1.weight  torch.Size([16])               torch.float32  
+layer1.1.bn1.bias    torch.Size([16])               torch.float32  
+layer1.1.conv2.weight torch.Size([16, 16, 3, 3])     torch.float32  
+layer1.1.bn2.weight  torch.Size([16])               torch.float32  
+layer1.1.bn2.bias    torch.Size([16])               torch.float32  
+layer1.1.relu1.alpha torch.Size([])                 torch.float32  
+layer1.1.relu2.alpha torch.Size([])                 torch.float32  
+layer1.2.conv1.weight torch.Size([16, 16, 3, 3])     torch.float32  
+layer1.2.bn1.weight  torch.Size([16])               torch.float32  
+layer1.2.bn1.bias    torch.Size([16])               torch.float32  
+layer1.2.conv2.weight torch.Size([16, 16, 3, 3])     torch.float32  
+layer1.2.bn2.weight  torch.Size([16])               torch.float32  
+layer1.2.bn2.bias    torch.Size([16])               torch.float32  
+layer1.2.relu1.alpha torch.Size([])                 torch.float32  
+layer1.2.relu2.alpha torch.Size([])                 torch.float32  
+layer2.0.conv1.weight torch.Size([32, 16, 3, 3])     torch.float32  
+layer2.0.bn1.weight  torch.Size([32])               torch.float32  
+layer2.0.bn1.bias    torch.Size([32])               torch.float32  
+layer2.0.conv2.weight torch.Size([32, 32, 3, 3])     torch.float32  
+layer2.0.bn2.weight  torch.Size([32])               torch.float32  
+layer2.0.bn2.bias    torch.Size([32])               torch.float32  
+layer2.0.relu1.alpha torch.Size([])                 torch.float32  
+layer2.0.relu2.alpha torch.Size([])                 torch.float32  
+layer2.0.downsample.0.weight torch.Size([32, 16, 1, 1])     torch.float32  
+layer2.0.downsample.1.weight torch.Size([32])               torch.float32  
+layer2.0.downsample.1.bias torch.Size([32])               torch.float32  
+layer2.1.conv1.weight torch.Size([32, 32, 3, 3])     torch.float32  
+layer2.1.bn1.weight  torch.Size([32])               torch.float32  
+layer2.1.bn1.bias    torch.Size([32])               torch.float32  
+layer2.1.conv2.weight torch.Size([32, 32, 3, 3])     torch.float32  
+layer2.1.bn2.weight  torch.Size([32])               torch.float32  
+layer2.1.bn2.bias    torch.Size([32])               torch.float32  
+layer2.1.relu1.alpha torch.Size([])                 torch.float32  
+layer2.1.relu2.alpha torch.Size([])                 torch.float32  
+layer2.2.conv1.weight torch.Size([32, 32, 3, 3])     torch.float32  
+layer2.2.bn1.weight  torch.Size([32])               torch.float32  
+layer2.2.bn1.bias    torch.Size([32])               torch.float32  
+layer2.2.conv2.weight torch.Size([32, 32, 3, 3])     torch.float32  
+layer2.2.bn2.weight  torch.Size([32])               torch.float32  
+layer2.2.bn2.bias    torch.Size([32])               torch.float32  
+layer2.2.relu1.alpha torch.Size([])                 torch.float32  
+layer2.2.relu2.alpha torch.Size([])                 torch.float32  
+layer3.0.conv1.weight torch.Size([64, 32, 3, 3])     torch.float32  
+layer3.0.bn1.weight  torch.Size([64])               torch.float32  
+layer3.0.bn1.bias    torch.Size([64])               torch.float32  
+layer3.0.conv2.weight torch.Size([64, 64, 3, 3])     torch.float32  
+layer3.0.bn2.weight  torch.Size([64])               torch.float32  
+layer3.0.bn2.bias    torch.Size([64])               torch.float32  
+layer3.0.relu1.alpha torch.Size([])                 torch.float32  
+layer3.0.relu2.alpha torch.Size([])                 torch.float32  
+layer3.0.downsample.0.weight torch.Size([64, 32, 1, 1])     torch.float32  
+layer3.0.downsample.1.weight torch.Size([64])               torch.float32  
+layer3.0.downsample.1.bias torch.Size([64])               torch.float32  
+layer3.1.conv1.weight torch.Size([64, 64, 3, 3])     torch.float32  
+layer3.1.bn1.weight  torch.Size([64])               torch.float32  
+layer3.1.bn1.bias    torch.Size([64])               torch.float32  
+layer3.1.conv2.weight torch.Size([64, 64, 3, 3])     torch.float32  
+layer3.1.bn2.weight  torch.Size([64])               torch.float32  
+layer3.1.bn2.bias    torch.Size([64])               torch.float32  
+layer3.1.relu1.alpha torch.Size([])                 torch.float32  
+layer3.1.relu2.alpha torch.Size([])                 torch.float32  
+layer3.2.conv1.weight torch.Size([64, 64, 3, 3])     torch.float32  
+layer3.2.bn1.weight  torch.Size([64])               torch.float32  
+layer3.2.bn1.bias    torch.Size([64])               torch.float32  
+layer3.2.conv2.weight torch.Size([64, 64, 3, 3])     torch.float32  
+layer3.2.bn2.weight  torch.Size([64])               torch.float32  
+layer3.2.bn2.bias    torch.Size([64])               torch.float32  
+layer3.2.relu1.alpha torch.Size([])                 torch.float32  
+layer3.2.relu2.alpha torch.Size([])                 torch.float32  
+fc.weight            torch.Size([10, 64])           torch.float32  
+fc.bias              torch.Size([10])               torch.float32  
+ 
+    Total params: 0.27M
+loading pretrained model
+Accuracy: 79.05%
+module.conv1
+Weight:   3.01%,  26.16%,  43.75%
+module.layer1.0.conv1
+Weight:   1.04%,  14.32%,  44.62%
+module.layer1.0.conv2
+Weight:   2.34%,  24.96%,  50.52%
+module.layer1.1.conv1
+Weight:   1.26%,  20.27%,  48.70%
+module.layer1.1.conv2
+Weight:   0.56%,  15.62%,  49.05%
+module.layer1.2.conv1
+Weight:   2.82%,  26.78%,  49.18%
+module.layer1.2.conv2
+Weight:   1.56%,  21.66%,  49.18%
+module.layer2.0.conv1
+Weight:   0.82%,  19.01%,  49.46%
+module.layer2.0.conv2
+Weight:   0.25%,  13.47%,  48.57%
+module.layer2.0.downsample.0
+Weight:   4.88%,  28.91%,  49.61%
+module.layer2.1.conv1
+Weight:   2.81%,  30.31%,  48.93%
+module.layer2.1.conv2
+Weight:   3.50%,  32.73%,  50.03%
+module.layer2.2.conv1
+Weight:   0.18%,  14.42%,  50.24%
+module.layer2.2.conv2
+Weight:   0.73%,  21.95%,  50.29%
+module.layer3.0.conv1
+Weight:   2.48%,  29.23%,  50.01%
+module.layer3.0.conv2
+Weight:   0.96%,  23.85%,  50.20%
+module.layer3.0.downsample.0
+Weight:   5.22%,  35.35%,  50.00%
+module.layer3.1.conv1
+Weight:   2.05%,  28.78%,  49.90%
+module.layer3.1.conv2
+Weight:   0.77%,  21.95%,  49.60%
+module.layer3.2.conv1
+Weight:   0.58%,  20.65%,  50.14%
+module.layer3.2.conv2
+Weight:   0.36%,  17.40%,  49.10%
+module.fc
+Weight:  25.31%,  56.72%,  51.09%
+Bias:    40.00%,  60.00%,  40.00%
+Param name           Shape                          Type           
+----------------------------------------------------------------------
+module.conv1.pweight torch.Size([16, 3, 3, 3, 3])   torch.float32  
+module.conv1.nweight torch.Size([16, 3, 3, 3, 3])   torch.float32  
+module.conv1.scale   torch.Size([])                 torch.float32  
+module.bn1.weight    torch.Size([16])               torch.float32  
+module.bn1.bias      torch.Size([16])               torch.float32  
+module.layer1.0.conv1.pweight torch.Size([16, 16, 3, 3, 3])  torch.float32  
+module.layer1.0.conv1.nweight torch.Size([16, 16, 3, 3, 3])  torch.float32  
+module.layer1.0.conv1.scale torch.Size([])                 torch.float32  
+module.layer1.0.bn1.weight torch.Size([16])               torch.float32  
+module.layer1.0.bn1.bias torch.Size([16])               torch.float32  
+module.layer1.0.conv2.pweight torch.Size([16, 16, 3, 3, 3])  torch.float32  
+module.layer1.0.conv2.nweight torch.Size([16, 16, 3, 3, 3])  torch.float32  
+module.layer1.0.conv2.scale torch.Size([])                 torch.float32  
+module.layer1.0.bn2.weight torch.Size([16])               torch.float32  
+module.layer1.0.bn2.bias torch.Size([16])               torch.float32  
+module.layer1.0.relu1.alpha torch.Size([])                 torch.float32  
+module.layer1.0.relu2.alpha torch.Size([])                 torch.float32  
+module.layer1.1.conv1.pweight torch.Size([16, 16, 3, 3, 3])  torch.float32  
+module.layer1.1.conv1.nweight torch.Size([16, 16, 3, 3, 3])  torch.float32  
+module.layer1.1.conv1.scale torch.Size([])                 torch.float32  
+module.layer1.1.bn1.weight torch.Size([16])               torch.float32  
+module.layer1.1.bn1.bias torch.Size([16])               torch.float32  
+module.layer1.1.conv2.pweight torch.Size([16, 16, 3, 3, 3])  torch.float32  
+module.layer1.1.conv2.nweight torch.Size([16, 16, 3, 3, 3])  torch.float32  
+module.layer1.1.conv2.scale torch.Size([])                 torch.float32  
+module.layer1.1.bn2.weight torch.Size([16])               torch.float32  
+module.layer1.1.bn2.bias torch.Size([16])               torch.float32  
+module.layer1.1.relu1.alpha torch.Size([])                 torch.float32  
+module.layer1.1.relu2.alpha torch.Size([])                 torch.float32  
+module.layer1.2.conv1.pweight torch.Size([16, 16, 3, 3, 3])  torch.float32  
+module.layer1.2.conv1.nweight torch.Size([16, 16, 3, 3, 3])  torch.float32  
+module.layer1.2.conv1.scale torch.Size([])                 torch.float32  
+module.layer1.2.bn1.weight torch.Size([16])               torch.float32  
+module.layer1.2.bn1.bias torch.Size([16])               torch.float32  
+module.layer1.2.conv2.pweight torch.Size([16, 16, 3, 3, 3])  torch.float32  
+module.layer1.2.conv2.nweight torch.Size([16, 16, 3, 3, 3])  torch.float32  
+module.layer1.2.conv2.scale torch.Size([])                 torch.float32  
+module.layer1.2.bn2.weight torch.Size([16])               torch.float32  
+module.layer1.2.bn2.bias torch.Size([16])               torch.float32  
+module.layer1.2.relu1.alpha torch.Size([])                 torch.float32  
+module.layer1.2.relu2.alpha torch.Size([])                 torch.float32  
+module.layer2.0.conv1.pweight torch.Size([32, 16, 3, 3, 3])  torch.float32  
+module.layer2.0.conv1.nweight torch.Size([32, 16, 3, 3, 3])  torch.float32  
+module.layer2.0.conv1.scale torch.Size([])                 torch.float32  
+module.layer2.0.bn1.weight torch.Size([32])               torch.float32  
+module.layer2.0.bn1.bias torch.Size([32])               torch.float32  
+module.layer2.0.conv2.pweight torch.Size([32, 32, 3, 3, 3])  torch.float32  
+module.layer2.0.conv2.nweight torch.Size([32, 32, 3, 3, 3])  torch.float32  
+module.layer2.0.conv2.scale torch.Size([])                 torch.float32  
+module.layer2.0.bn2.weight torch.Size([32])               torch.float32  
+module.layer2.0.bn2.bias torch.Size([32])               torch.float32  
+module.layer2.0.relu1.alpha torch.Size([])                 torch.float32  
+module.layer2.0.relu2.alpha torch.Size([])                 torch.float32  
+module.layer2.0.downsample.0.pweight torch.Size([32, 16, 1, 1, 3])  torch.float32  
+module.layer2.0.downsample.0.nweight torch.Size([32, 16, 1, 1, 3])  torch.float32  
+module.layer2.0.downsample.0.scale torch.Size([])                 torch.float32  
+module.layer2.0.downsample.1.weight torch.Size([32])               torch.float32  
+module.layer2.0.downsample.1.bias torch.Size([32])               torch.float32  
+module.layer2.1.conv1.pweight torch.Size([32, 32, 3, 3, 3])  torch.float32  
+module.layer2.1.conv1.nweight torch.Size([32, 32, 3, 3, 3])  torch.float32  
+module.layer2.1.conv1.scale torch.Size([])                 torch.float32  
+module.layer2.1.bn1.weight torch.Size([32])               torch.float32  
+module.layer2.1.bn1.bias torch.Size([32])               torch.float32  
+module.layer2.1.conv2.pweight torch.Size([32, 32, 3, 3, 3])  torch.float32  
+module.layer2.1.conv2.nweight torch.Size([32, 32, 3, 3, 3])  torch.float32  
+module.layer2.1.conv2.scale torch.Size([])                 torch.float32  
+module.layer2.1.bn2.weight torch.Size([32])               torch.float32  
+module.layer2.1.bn2.bias torch.Size([32])               torch.float32  
+module.layer2.1.relu1.alpha torch.Size([])                 torch.float32  
+module.layer2.1.relu2.alpha torch.Size([])                 torch.float32  
+module.layer2.2.conv1.pweight torch.Size([32, 32, 3, 3, 3])  torch.float32  
+module.layer2.2.conv1.nweight torch.Size([32, 32, 3, 3, 3])  torch.float32  
+module.layer2.2.conv1.scale torch.Size([])                 torch.float32  
+module.layer2.2.bn1.weight torch.Size([32])               torch.float32  
+module.layer2.2.bn1.bias torch.Size([32])               torch.float32  
+module.layer2.2.conv2.pweight torch.Size([32, 32, 3, 3, 3])  torch.float32  
+module.layer2.2.conv2.nweight torch.Size([32, 32, 3, 3, 3])  torch.float32  
+module.layer2.2.conv2.scale torch.Size([])                 torch.float32  
+module.layer2.2.bn2.weight torch.Size([32])               torch.float32  
+module.layer2.2.bn2.bias torch.Size([32])               torch.float32  
+module.layer2.2.relu1.alpha torch.Size([])                 torch.float32  
+module.layer2.2.relu2.alpha torch.Size([])                 torch.float32  
+module.layer3.0.conv1.pweight torch.Size([64, 32, 3, 3, 3])  torch.float32  
+module.layer3.0.conv1.nweight torch.Size([64, 32, 3, 3, 3])  torch.float32  
+module.layer3.0.conv1.scale torch.Size([])                 torch.float32  
+module.layer3.0.bn1.weight torch.Size([64])               torch.float32  
+module.layer3.0.bn1.bias torch.Size([64])               torch.float32  
+module.layer3.0.conv2.pweight torch.Size([64, 64, 3, 3, 3])  torch.float32  
+module.layer3.0.conv2.nweight torch.Size([64, 64, 3, 3, 3])  torch.float32  
+module.layer3.0.conv2.scale torch.Size([])                 torch.float32  
+module.layer3.0.bn2.weight torch.Size([64])               torch.float32  
+module.layer3.0.bn2.bias torch.Size([64])               torch.float32  
+module.layer3.0.relu1.alpha torch.Size([])                 torch.float32  
+module.layer3.0.relu2.alpha torch.Size([])                 torch.float32  
+module.layer3.0.downsample.0.pweight torch.Size([64, 32, 1, 1, 3])  torch.float32  
+module.layer3.0.downsample.0.nweight torch.Size([64, 32, 1, 1, 3])  torch.float32  
+module.layer3.0.downsample.0.scale torch.Size([])                 torch.float32  
+module.layer3.0.downsample.1.weight torch.Size([64])               torch.float32  
+module.layer3.0.downsample.1.bias torch.Size([64])               torch.float32  
+module.layer3.1.conv1.pweight torch.Size([64, 64, 3, 3, 3])  torch.float32  
+module.layer3.1.conv1.nweight torch.Size([64, 64, 3, 3, 3])  torch.float32  
+module.layer3.1.conv1.scale torch.Size([])                 torch.float32  
+module.layer3.1.bn1.weight torch.Size([64])               torch.float32  
+module.layer3.1.bn1.bias torch.Size([64])               torch.float32  
+module.layer3.1.conv2.pweight torch.Size([64, 64, 3, 3, 3])  torch.float32  
+module.layer3.1.conv2.nweight torch.Size([64, 64, 3, 3, 3])  torch.float32  
+module.layer3.1.conv2.scale torch.Size([])                 torch.float32  
+module.layer3.1.bn2.weight torch.Size([64])               torch.float32  
+module.layer3.1.bn2.bias torch.Size([64])               torch.float32  
+module.layer3.1.relu1.alpha torch.Size([])                 torch.float32  
+module.layer3.1.relu2.alpha torch.Size([])                 torch.float32  
+module.layer3.2.conv1.pweight torch.Size([64, 64, 3, 3, 3])  torch.float32  
+module.layer3.2.conv1.nweight torch.Size([64, 64, 3, 3, 3])  torch.float32  
+module.layer3.2.conv1.scale torch.Size([])                 torch.float32  
+module.layer3.2.bn1.weight torch.Size([64])               torch.float32  
+module.layer3.2.bn1.bias torch.Size([64])               torch.float32  
+module.layer3.2.conv2.pweight torch.Size([64, 64, 3, 3, 3])  torch.float32  
+module.layer3.2.conv2.nweight torch.Size([64, 64, 3, 3, 3])  torch.float32  
+module.layer3.2.conv2.scale torch.Size([])                 torch.float32  
+module.layer3.2.bn2.weight torch.Size([64])               torch.float32  
+module.layer3.2.bn2.bias torch.Size([64])               torch.float32  
+module.layer3.2.relu1.alpha torch.Size([])                 torch.float32  
+module.layer3.2.relu2.alpha torch.Size([])                 torch.float32  
+module.fc.pweight    torch.Size([10, 64, 3])        torch.float32  
+module.fc.nweight    torch.Size([10, 64, 3])        torch.float32  
+module.fc.scale      torch.Size([])                 torch.float32  
+module.fc.pbias      torch.Size([10, 3])            torch.float32  
+module.fc.nbias      torch.Size([10, 3])            torch.float32  
+module.fc.biasscale  torch.Size([])                 torch.float32  
+module.conv1
+Weight:   3.01%,  26.16%,  43.75%
+module.layer1.0.conv1
+Weight:   1.04%,  14.32%,  44.62%
+module.layer1.0.conv2
+Weight:   2.34%,  24.96%,  50.52%
+module.layer1.1.conv1
+Weight:   1.26%,  20.27%,  48.70%
+module.layer1.1.conv2
+Weight:   0.56%,  15.62%,  49.05%
+module.layer1.2.conv1
+Weight:   2.82%,  26.78%,  49.18%
+module.layer1.2.conv2
+Weight:   1.56%,  21.66%,  49.18%
+module.layer2.0.conv1
+Weight:   0.82%,  19.01%,  49.46%
+module.layer2.0.conv2
+Weight:   0.25%,  13.47%,  48.57%
+module.layer2.0.downsample.0
+Weight:   4.88%,  28.91%,  49.61%
+module.layer2.1.conv1
+Weight:   2.81%,  30.31%,  48.93%
+module.layer2.1.conv2
+Weight:   3.50%,  32.73%,  50.03%
+module.layer2.2.conv1
+Weight:   0.18%,  14.42%,  50.24%
+module.layer2.2.conv2
+Weight:   0.73%,  21.95%,  50.29%
+module.layer3.0.conv1
+Weight:   2.48%,  29.23%,  50.01%
+module.layer3.0.conv2
+Weight:   0.96%,  23.85%,  50.20%
+module.layer3.0.downsample.0
+Weight:   5.22%,  35.35%,  50.00%
+module.layer3.1.conv1
+Weight:   2.05%,  28.78%,  49.90%
+module.layer3.1.conv2
+Weight:   0.77%,  21.95%,  49.60%
+module.layer3.2.conv1
+Weight:   0.58%,  20.65%,  50.14%
+module.layer3.2.conv2
+Weight:   0.36%,  17.40%,  49.10%
+module.fc
+Weight:  25.31%,  56.72%,  51.09%
+Bias:    40.00%,  60.00%,  40.00%
+Accuracy: 67.28%

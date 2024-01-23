@@ -1,0 +1,98 @@
+==> Preparing dataset cifar10
+Files already downloaded and verified
+==> creating model 'resnet'
+    Total params: 4.34M
+loading pretrained model
+Accuracy: 74.12%
+module.conv1
+Weight:   0.46%,   4.40%,  24.54%,  38.89%,  41.44%,  43.29%
+module.layer1.0.conv1
+Weight:   0.04%,   3.60%,  22.35%,  45.27%
+module.layer1.0.conv2
+Weight:   0.09%,   9.29%,  45.49%
+module.layer1.1.conv1
+Weight:   0.04%,   4.47%,  41.80%
+module.layer1.1.conv2
+Weight:   0.04%,   4.34%,  41.49%
+module.layer1.2.conv1
+Weight:   0.17%,  13.15%,  46.09%
+module.layer1.2.conv2
+Weight:   0.04%,   7.03%,  45.14%
+module.layer2.0.conv1
+Weight:   0.02%,   4.82%,  44.77%
+module.layer2.0.conv2
+Weight:   0.97%,  36.82%
+module.layer2.0.downsample.0
+Weight:   0.98%,  11.91%,  37.30%,  49.41%
+module.layer2.1.conv1
+Weight:   0.60%,  36.36%
+module.layer2.1.conv2
+Weight:  16.08%
+module.layer2.2.conv1
+Weight:   0.85%,  38.69%
+module.layer2.2.conv2
+Weight:   0.09%,  28.37%
+module.layer3.0.conv1
+Weight:   9.94%
+module.layer3.0.conv2
+Weight:   4.79%
+module.layer3.0.downsample.0
+Weight:   0.05%,  11.52%,  50.63%
+module.layer3.1.conv1
+Weight:   2.59%
+module.layer3.1.conv2
+Weight:   1.80%
+module.layer3.2.conv1
+Weight:   2.25%
+module.layer3.2.conv2
+Weight:   0.46%
+module.fc
+Weight:   6.56%,  30.78%,  46.09%,  51.09%
+Bias:    20.00%,  80.00%
+Accuracy: 74.10%
+Accuracy: 74.17%
+conv1
+[6, 0]
+layer1.0.conv1
+[4, 0]
+layer1.0.conv2
+[3, 0]
+layer1.1.conv1
+[3, 0]
+layer1.1.conv2
+[3, 0]
+layer1.2.conv1
+[3, 0]
+layer1.2.conv2
+[3, 0]
+layer2.0.conv1
+[3, 0]
+layer2.0.conv2
+[2, 0]
+layer2.0.downsample.0
+[4, 0]
+layer2.1.conv1
+[2, 0]
+layer2.1.conv2
+[1, 0]
+layer2.2.conv1
+[2, 0]
+layer2.2.conv2
+[2, 0]
+layer3.0.conv1
+[1, 0]
+layer3.0.conv2
+[1, 0]
+layer3.0.downsample.0
+[3, 0]
+layer3.1.conv1
+[1, 0]
+layer3.1.conv2
+[1, 0]
+layer3.2.conv1
+[1, 0]
+layer3.2.conv2
+[1, 0]
+fc
+[4, 2]
+ Compression rate after pruning [8587072 / 348468]:  24.64 X

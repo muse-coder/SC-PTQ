@@ -1,0 +1,110 @@
+==> Preparing dataset cifar10
+Files already downloaded and verified
+==> creating model 'resnet'
+    Total params: 2.17M
+loading pretrained model
+module.conv1
+Weight:   3.01%,  23.38%,  37.27%,  43.98%
+module.layer1.0.conv1
+Weight:   1.04%,  12.07%,  34.98%,  46.92%
+module.layer1.0.conv2
+Weight:   2.34%,  21.53%,  42.27%,  50.22%
+module.layer1.1.conv1
+Weight:   1.26%,  17.62%,  40.23%,  48.65%
+module.layer1.1.conv2
+Weight:   0.56%,  12.37%,  38.54%,  50.13%
+module.layer1.2.conv1
+Weight:   2.82%,  23.35%,  41.80%,  49.05%
+module.layer1.2.conv2
+Weight:   1.56%,  18.49%,  39.24%,  49.39%
+module.layer2.0.conv1
+Weight:   0.82%,  15.32%,  40.30%,  50.54%
+module.layer2.0.conv2
+Weight:   0.25%,  10.71%,  37.58%,  50.14%
+module.layer2.0.downsample.0
+Weight:   4.88%,  24.80%,  44.34%,  49.22%
+module.layer2.1.conv1
+Weight:   2.81%,  26.04%,  42.95%,  50.37%
+module.layer2.1.conv2
+Weight:   3.50%,  28.85%,  43.98%,  49.02%
+module.layer2.2.conv1
+Weight:   0.18%,  11.30%,  40.18%,  49.87%
+module.layer2.2.conv2
+Weight:   0.73%,  18.31%,  41.40%,  50.15%
+module.layer3.0.conv1
+Weight:   2.48%,  25.14%,  44.02%,  49.51%
+module.layer3.0.conv2
+Weight:   0.96%,  20.09%,  42.46%,  49.89%
+module.layer3.0.downsample.0
+Weight:   5.22%,  30.81%,  45.12%,  50.44%
+module.layer3.1.conv1
+Weight:   2.05%,  24.94%,  43.08%,  50.15%
+module.layer3.1.conv2
+Weight:   0.77%,  18.07%,  41.53%,  49.76%
+module.layer3.2.conv1
+Weight:   0.58%,  16.98%,  41.41%,  50.36%
+module.layer3.2.conv2
+Weight:   0.36%,  14.12%,  39.66%,  50.14%
+module.fc
+Weight:  25.31%,  54.22%,  50.00%,  54.38%
+Bias:    40.00%,  60.00%,  40.00%,  50.00%
+Accuracy: 89.78%
+
+Epoch: [1 | 350] LR: 0.100000
+########Model after pruning########
+module.conv1
+Weight:   3.01%,  23.38%,  37.27%,  43.98%
+module.layer1.0.conv1
+Weight:   1.04%,  12.07%,  34.98%,  46.92%
+module.layer1.0.conv2
+Weight:   2.34%,  21.53%,  42.27%,  50.22%
+module.layer1.1.conv1
+Weight:   1.26%,  17.62%,  40.23%,  48.65%
+module.layer1.1.conv2
+Weight:   0.56%,  12.37%,  38.54%,  50.13%
+module.layer1.2.conv1
+Weight:   2.82%,  23.35%,  41.80%,  49.05%
+module.layer1.2.conv2
+Weight:   1.56%,  18.49%,  39.24%,  49.39%
+module.layer2.0.conv1
+Weight:   0.82%,  15.32%,  40.30%,  50.54%
+module.layer2.0.conv2
+Weight:   0.25%,  10.71%,  37.58%,  50.14%
+module.layer2.0.downsample.0
+Weight:   4.88%,  24.80%,  44.34%,  49.22%
+module.layer2.1.conv1
+Weight:   2.81%,  26.04%,  42.95%,  50.37%
+module.layer2.1.conv2
+Weight:   3.50%,  28.85%,  43.98%,  49.02%
+module.layer2.2.conv1
+Weight:   0.18%,  11.30%,  40.18%,  49.87%
+module.layer2.2.conv2
+Weight:   0.73%,  18.31%,  41.40%,  50.15%
+module.layer3.0.conv1
+Weight:   2.48%,  25.14%,  44.02%,  49.51%
+module.layer3.0.conv2
+Weight:   0.96%,  20.09%,  42.46%,  49.89%
+module.layer3.0.downsample.0
+Weight:   5.22%,  30.81%,  45.12%,  50.44%
+module.layer3.1.conv1
+Weight:   2.05%,  24.94%,  43.08%,  50.15%
+module.layer3.1.conv2
+Weight:   0.77%,  18.07%,  41.53%,  49.76%
+module.layer3.2.conv1
+Weight:   0.58%,  16.98%,  41.41%,  50.36%
+module.layer3.2.conv2
+Weight:   0.36%,  14.12%,  39.66%,  50.14%
+module.fc
+Weight:  25.31%,  54.22%,  50.00%,  54.38%
+Bias:    40.00%,  60.00%,  40.00%,  50.00%
+ Test Loss after pruning:  0.49773874, Test Acc:  89.73
+ Compression rate after pruning [8587072 / 1073384]:  8.00 X
+Total Loss: 0.7776 | top1:  82.2300
+
+Epoch: [2 | 350] LR: 0.100000
+Total Loss: 0.7244 | top1:  82.9400
+
+Epoch: [3 | 350] LR: 0.100000
+Total Loss: 0.5663 | top1:  85.3300
+
+Epoch: [4 | 350] LR: 0.100000

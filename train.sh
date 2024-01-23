@@ -1,0 +1,2 @@
+# python cifar_finetune.py -a resnet --depth 20 --epochs 300 --lr 0.01 --schedule 150 250 --gamma 0.1 --wd 1e-4 --model checkpoints/cifar10/W4A4-origin-mp/checkpoint.pth.tar --checkpoint checkpoints/cifar10/W4A4-ft --Nbits 4 --act 4 --bin >W4A4-ft.txt
+python cifar_prune_STE.py -a resnet --depth 20  --train-batch 512 --epochs 200 --lr 0.1 --schedule 250 --gamma 0.1 --wd 1e-4 --model checkpoints/cifar10/W4A4-origin-mp/model_best.pth.tar --decay 0.01 --Prun_Int 100 --thre 0.0 --checkpoint checkpoints/cifar10/W4A4-train --Nbits 4 --act 4 --bin --L1 >W4A4-train.txt

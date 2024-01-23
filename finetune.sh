@@ -1,0 +1,1 @@
+python cifar_finetune.py -a resnet --depth 20 --epochs 100 --lr 0.01 --schedule 150 250 --gamma 0.1 --wd 1e-4 --model checkpoints/cifar10/W4A4-train/checkpoint.pth.tar --checkpoint checkpoints/cifar10/W4A4-ft --Nbits 8 --act 4 --bin >W4A4-ft.txt

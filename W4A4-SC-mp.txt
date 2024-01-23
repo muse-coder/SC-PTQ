@@ -1,0 +1,3 @@
+==> Preparing dataset cifar10
+Files already downloaded and verified
+==> creating model 'resnet'
